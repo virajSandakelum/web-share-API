@@ -15,13 +15,10 @@ const WebAPIPage = () => {
             if ('share' in navigator) {
                 const shareData = {
                     files: [file],
-                    title: 'Jabberwocky',
-                    text: 'Check out this great poem about a Jabberwocky.',
-                    url: 'https://en.wikipedia.org/wiki/Jabberwocky',
+                    title: 'Payment Summary',
+                    text: 'Check out this payment summary!',
                 };
-    
                 await navigator.share(shareData);
-                console.log('Thanks for sharing!');
             } else {
                 alert("Sharing is not supported on this browser.");
             }
@@ -48,7 +45,7 @@ const WebAPIPage = () => {
     return (
         <div ref={abcRef}>
 
-            <button onClick={share}>Shgggare</button>
+            <button onClick={share}>Share Button</button>
 
         </div>
     )
